@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-OFF rerquest</title>
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    <br>
+    <!-- Web site title with bootstrap-->
+    <p class="text-center fs-1 text-primary"> Day-OFF request</p>
+    <br>
+    <div class="card"> 
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <!-- Two calendars from bootstrap for setting dates -->
+                    <div class="form-group"> <!-- Start -->
+                        <label for="new-start-date">Day off Starts</label>                        
+                        <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group"> <!-- End -->
+                        <label for="new-end-date">Day off Ends</label>
+                        <input type="date" class="form-control" id="new-end-date">
+                    </div>
+                </div>  
+            </div>
+            
+            <!-- This is the spot for user. Where they can put info. -->
+            <!-- And button for submitting -->
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-name">Employee's Name</label>
+                        <input type="text" class="form-control" id="new-name">
+                        <button id="add" class="btn btn-primary form-control">Set a new OFF schedule</button>                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Table. It shows table header by section. -->
+    <table id="info" class="table table-light table-striped">
+        <tr>
+            <th>Name</th>
+            <th>Date requested</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Cancel</th>
+        </tr>
+    </table>
+
+
+    
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
